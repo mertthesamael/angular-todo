@@ -1,0 +1,6 @@
+<div class="todo" *ngFor="let todo of todos">
+        
+        <p>{{todo.content}}</p>
+
+        <button (click)="removeTodo(todo.id)">annen</button>
+</div>

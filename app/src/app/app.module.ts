@@ -6,15 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContainerComponent } from './container/container.component';
 import { DataService } from './data.service';
+import { TodoItemComponent } from './todo-item/todo-item.component';
+import { InputComponent } from './input/input.component';
+import {MatInputModule} from '@angular/material/input';
+
+
 @NgModule({
-  declarations: [
+    declarations: [
     AppComponent,
-    ContainerComponent
+    ContainerComponent,
+    TodoItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    InputComponent
+
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
