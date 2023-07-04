@@ -9,6 +9,7 @@ import { DataService } from './data.service';
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { InputComponent } from './input/input.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -22,7 +23,10 @@ import {MatInputModule} from '@angular/material/input';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
+    MatButtonModule,
     InputComponent
+    
+
 
   ],
   providers: [DataService],

@@ -4,6 +4,15 @@
     justify-content: space-between;
     position: relative;
     align-items: center;
+    gap: 2rem;
+    & #remove{
+        border: 1px solid rgba(255, 0, 0, 0.568);
+        width: max-content;
+    }
+    & button{
+        border: 1px solid grey;
+        width: 100%;
+    }
     & p{
         height: max-content;
         width: max-content;

@@ -1,6 +1,4 @@
 <div class="todo" *ngFor="let todo of todos">
-        
-        <p>{{todo.content}}</p>
-
-        <button (click)="removeTodo(todo.id)">annen</button>
+        <button [ngStyle]="getButtonStyle(todo.status)" mat-button color="white" (click)="todoHandle(todo.id,todo.status)">{{todo.content}}</button>
+        <button id="remove" mat-button color="warn" (click)="removeTodo(todo.id)">Remove</button>
 </div>

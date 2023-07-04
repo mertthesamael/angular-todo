@@ -29,6 +29,18 @@ export class DataService {
   }
 
 
+  updateTodoStatus(id: number, status: boolean) {
+    const updatedTodos = this.todos.getValue().map((todo: any) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          status: !status
+        };
+      }
+      return todo;
+    });
+    this.todos.next(updatedTodos);
+  }
 
 
 }
